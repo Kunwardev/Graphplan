@@ -1,0 +1,39 @@
+(operator
+moveleft
+(params
+(<a> Tile)(<from> Location)(<to> Location))
+(preconds
+(empty <to>)(tileAt <a> <from>)(validLocation <from>)(validLocation <to>)(incBy1 <to> <from>))
+(effects
+(del empty <to>)(del tileAt <a> <from>)(empty <from>)(tileAt <a> <to>))
+)
+
+(operator
+moveright
+(params
+(<a> Tile)(<from> Location)(<to> Location))
+(preconds
+(empty <to>)(tileAt <a> <from>)(validLocation <from>)(validLocation <to>)(decBy1 <to> <from>))
+(effects
+(del empty <to>)(del tileAt <a> <from>)(empty <from>)(tileAt <a> <to>))
+)
+
+(operator
+moveup
+(params
+(<a> Tile)(<from> Location)(<to> Location))
+(preconds
+(empty <to>)(tileAt <a> <from>)(validLocation <from>)(validLocation <to>)(incBy3 <to> <from>))
+(effects
+(del empty <to>)(del tileAt <a> <from>)(empty <from>)(tileAt <a> <to>))
+)
+
+(operator
+movedown
+(params
+(<a> Tile)(<from> Location)(<to> Location))
+(preconds
+(empty <to>)(tileAt <a> <from>)(validLocation <from>)(validLocation <to>)(decBy3 <to> <from>))
+(effects
+(del empty <to>)(del tileAt <a> <from>)(empty <from>)(tileAt <a> <to>))
+)

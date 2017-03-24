@@ -1,0 +1,51 @@
+(t1 Tile)
+(t2 Tile)
+(t3 Tile)
+(t4 Tile)
+(t5 Tile)
+(t6 Tile)
+(t7 Tile)
+(l1 Location)
+(l2 Location)
+(l3 Location)
+(l4 Location)
+(l5 Location)
+(l6 Location)
+(l7 Location)
+(l8 Location)
+(l9 Location)
+
+
+(preconds
+(tile t1) (tile t2) (tile t3) (tile t4) (tile t5) (tile t6) (tile t7)
+(validLocation l1) (validLocation l2) (validLocation l3)
+(validLocation l4) (validLocation l5) (validLocation l6)
+(validLocation l7) (validLocation l8) (validLocation l9)
+
+(tileAt t1 l9)
+(tileAt t2 l8)
+(tileAt t3 l7)
+(tileAt t4 l6)
+(tileAt t5 l5)
+(tileAt t6 l4)
+(tileAt t7 l3)
+
+(empty l2)
+(empty l1)
+
+(incBy1 l1 l2) (incBy1 l2 l3) (incBy1 l4 l5) (incBy1 l5 l6) (incBy1 l7 l8) (incBy1 l8 l9)
+(decBy1 l9 l8) (decBy1 l8 l7)  (decBy1 l6 l5) (decBy1 l5 l4) (decBy1 l3 l2 ) (decBy1 l2 l1)
+(incBy3 l1 l4) (incBy3 l4 l7) (incBy3 l3 l6) (incBy3 l6 l9) (incBy3 l2 l5) (incBy3 l5 l8)
+(decBy3 l4 l1) (decBy3 l7 l4)  (decBy3 l6 l3) (decBy3 l9 l6) (decBy3 l5 l2 ) (decBy3 l8 l5)
+
+)
+
+(effects
+(tileAt t1 l1)
+(tileAt t2 l2)
+(tileAt t3 l3)
+(tileAt t4 l4)
+(tileAt t5 l5)
+(tileAt t6 l6)
+(tileAt t7 l7)
+)

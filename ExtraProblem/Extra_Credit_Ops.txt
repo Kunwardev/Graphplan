@@ -1,0 +1,8 @@
+(operator
+ aaa
+ (params
+ (<b> ttt1) (<c> ttt1))
+ (preconds
+ (ppp1 <b> <c>) (ppp2 <b>) (ppp3 <c>))
+ (effects
+ (eee1 <b> <c>) (eee2 <b>) (del eee2 <c>) (del eee3 <c>)))
